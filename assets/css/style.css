@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #900c3f;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+.title {
+    background-color: #cb6f32;
+    color: white;
+    float: left;
+    margin-bottom: 20px;
+    padding: 10px 5px 10px 5px;
+
+}
+
+.break {
+    clear: both;
+}
+
+.content {
+    background-color: #fbe6ce; 
+    clear: both;
+    color: #1ba35e;
+    padding: 15px 3px 40px 3px;
+    width: 46%;
+}
+
+.random-number {
+    background-color: #1ba35e;
+    color: black;
+    float: left;
+    margin-right: 20px;
+    padding: 0 0 20px 0;
+    text-align: center;
+    width: 22%;
+}
+
+.wins-and-losses {
+    background-color: #3afefd;
+    float: le;
+    margin-top: 20px;
+    overflow: auto;
+    width: 15%;
+}
+
+.row {
+    float: left;
+    margin: 5px;
+    width: 20%;
+}
+
+img {
+    float: left;
+    display: block;
+    margin: auto;
+}
+
+/* .row::after {
+    content: "";
+    clear: both;
+    display: table;
+} */
+
+.score-heading {
+    background-color: #1fa397;
+    clear: both;
+    color: white;
+    padding: 10px;
+    width: 22%;
+}
+
+.your-score {
+    background-color: #1fa397;
+    color: white;
+    padding-bottom: 35px;
+    width: 22%;
+
+}
+
