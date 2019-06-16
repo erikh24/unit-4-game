@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Crystals Collector</title>
 
     <!-- Link to the jQuery Library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -17,31 +17,13 @@
     <!--Link to style sheet -->
     <!-- <link rel="stylesheet" href="./assets/css/style.css"> -->
 
-
 </head>
 
 <body>
-
-    <div class="jumbotron bg-success text-white ml-5 mr-5">
-        <h1 class="display-4 bg-success text-white">Crystals Collector!</h1>
-        <!-- <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to
-            featured content or information.</p> -->
-        <hr class="my-4">
-        <!-- <p>It uses utility classes for typography and spacing to space content out within the larger container.</p> -->
-        <p>You will be given a random number at the start of the game.</p>
-        <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your
-            total score.</p>
-        <p>You win the game by matching your total score to the random number. You lose the game if your total score
-            goes above the random number.</p>
-        <p>The value of each crystal is hidden from you until you click on it.</p>
-        <p>Each time you start a new game, the values of the crystals will change.</p>
-        <p>Good luck!!</p>
-        <!-- <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a> -->
-    </div>
-
-
-    <!-- <section>
-        <div class=content>
+    <div class="container">
+        <div class="jumbotron bg-success text-white">
+            <h1 class="display-4 bg-success text-white">Crystals Collector!</h1>
+            <hr class="my-4">
             <p>You will be given a random number at the start of the game.</p>
             <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your
                 total score.</p>
@@ -51,98 +33,105 @@
             <p>Each time you start a new game, the values of the crystals will change.</p>
             <p>Good luck!!</p>
         </div>
-    </section> -->
-
-    <div class="container">
-        <div class="row">
-            <div class="col-md-5 bg-secondary text-white pb-5 ml-5 mr-5 mb-3">(the random number)</div>
-            <!-- <div class="col-md-1"></div> -->
-            <div class="col-md-5 bg-secondary text-white pb-5 mb-3">Your Score: </div>
-            <!-- <div class="col-md-1"></div>
-            <div class="col-md-3 bg-secondary text-white pb-5">Losses: </div> -->
-        </div>
-        <!-- <div class="row">
-              <div class="col-md-3 ml-md-auto">.col-md-3 .ml-md-auto</div>
-              <div class="col-md-3 ml-md-auto">.col-md-3 .ml-md-auto</div>
-            </div>
-            <div class="row">
-              <div class="col-auto mr-auto">.col-auto .mr-auto</div>
-              <div class="col-auto">.col-auto</div>
-            </div> -->
     </div>
 
-    <!-- <section>
-        <div class=random-number>
-            <h1>(a #)</h1>
+    <div class="row">
+        <div class="col-lg-5"></div>
+        <div class="col-lg-2">
+            <!-- First card: Holds the random number that the user is trying to get to) -->
+            <div class="card">
+                <div class="card-body bg-secondary text-white">
+                    <h3 class="card-title"><strong>Target Score: </strong></h3>
+                </div>
+                <div class="card-body">
+                    <!-- This h3 section called random-number is what we'll be replacing with random number that is selected.
+                        Pay particular attention to the id called ***random-number***. We'll be referencing this in the JavaScript. -->
+                    <h3 id="random-number"></h3>
+                </div>
+            </div>
         </div>
+    </div>
 
-        <div class=wins-and-losses>
-            <p>Wins: </p>
-            <p>Losses: </p>
-        </div>
-    </section> -->
+    <br>
 
-
-
-    <!-- <section>
-        <div class=row>
-            <img src="./assets/images/BlueCrystal2.jpg" alt="blue crystal" style="width: 50%">
+    <div class="row">
+        <div class="col-lg-5"></div>
+        <div class="col-lg-2">
+            <!-- Second card: Shows the users current score. -->
+            <div class="card">
+                <div class="card-body bg-secondary text-white">
+                    <h3 class="card-title"><strong>Your Score: </strong></h3>
+                </div>
+                <div class="card-body">
+                    <!-- This h3 section called your-score is what we'll be replacing with current score as the user clicks on crystals.
+                        Pay particular attention to the id called ***your-score***. We'll be referencing this in the JavaScript. -->
+                    <h3 id="your-score"></h3>
+                </div>
+            </div>
         </div>
-        <div class=row>
-            <img src="./assets/images/GreenCrystal2.jpg" alt="green crystal" style="width: 50%">
-        </div>
-        <div class=row>
-            <img src="./assets/images/RedCrystal2.jpg" alt="red crystal" style="width: 50%">
-        </div>
-
-        <div class=row>
-            <img src="./assets/images/YellowCrystal2.jpg" alt="yellow crystal" style="width: 50%">
-        </div>
-    </section> -->
+        <div class="col-lg-3"></div>
+    </div>
 
     <div class="container">
         <div class="row">
-            <div class="col-3">
+            <div class="col-2">
+            </div>
+            <div class="col-2">
                 <img src="assets/images/blue.png" class="img-fluid mt-3 mb-3" alt="blue crystal">
             </div>
-            <div class="col-3">
+            <div class="col-2">
                 <img src="assets/images/green.png" class="img-fluid mt-3 mb-3" alt="green crystal">
             </div>
-            <div class="col-3">
+            <div class="col-2">
                 <img src="assets/images/red.png" class="img-fluid mt-3 mb-3" alt="red crystal">
             </div>
-            <div class="col-3">
+            <div class="col-2">
                 <img src="assets/images/yellow.png" class="img-fluid mt-3 mb-3" alt="yellow crystal">
+            </div>
+            <div class="col-2">
             </div>
         </div>
     </div>
 
-    <!-- <section>
-        <div class=score-heading>
-            <h4>Your Total Score Is: </h4>
-        </div>
-    </section>
-
-    <section>
-        <div class=your-score>
-            <h1>(a #)</h1>
-        </div>
-    </section> -->
-
-    <div class="container">
-            <div class="row">
-                <div class="col-md-5 bg-secondary text-white pb-5 mb-3 ml-5 mr-5">Wins: </div>
-                <!-- <div class="col-md-1"></div> -->
-                <div class="col-md-5 bg-secondary text-white pb-5 mb-3">Losses: </div>
-                <!-- <div class="col-md-1"></div>
-                <div class="col-md-3 bg-secondary text-white pb-5">Losses: </div> -->
+    <div class="row">
+        <div class="col-lg-3"></div>
+        <div class="col-lg-3">
+            <!-- First card: Holds the number of wins for the user -->
+            <div class="card">
+                <div class="card-body bg-secondary text-white">
+                    <h3 class="card-title"><strong>Wins: </strong></h3>
+                </div>
+                <div class="card-body">
+                    <!-- This h3 section called number-wins is what we'll be replacing when the user wins the game.
+                        Pay particular attention to the id called ***number-wins***. We'll be referencing this in the JavaScript. -->
+                    <h3 id="number-wins"></h3>
+                </div>
             </div>
         </div>
+        <div class="col-lg-3">
+            <!-- First card: Holds the number of losses for the user -->
+            <div class="card">
+                <div class="card-body bg-secondary text-white">
+                    <!-- This h3 section called number-losses is what we'll be replacing when the user losses the game.
+                        Pay particular attention to the id called ***number-losses***. We'll be referencing this in the JavaScript. -->
+                    <h3 class="card-title"><strong>Losses: </strong></h3>
+                </div>
+                <div class="card-body">
+                    <!-- This h3 section called number-losses is what we'll be replacing when the user losses the game.
+                        Pay particular attention to the id called ***number-wins***. We'll be referencing this in the JavaScript. -->
+                    <h3 id="number-losses"></h3>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3"></div>
 
+    </div>
 
+    <footer>
+        <br>
+    </footer>
 
+    <script src="./assets/javascript/game.js"></script>
 </body>
-
-<script src="./assets/javascript/game.js"></script>
 
 </html>
