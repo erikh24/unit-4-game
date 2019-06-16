@@ -2,6 +2,7 @@
     box-sizing: border-box;
 }
 
+/* 
 body {
     background-color: #900c3f;
     font-family: Arial, Helvetica, sans-serif;
@@ -19,17 +20,17 @@ body {
 
 .break {
     clear: both;
-}
+} */
 
-.content {
+/* .content {
     background-color: #fbe6ce; 
     clear: both;
     color: #1ba35e;
     padding: 15px 3px 40px 3px;
     width: 46%;
-}
+} */
 
-.random-number {
+/* .random-number {
     background-color: #1ba35e;
     color: black;
     float: left;
@@ -37,34 +38,34 @@ body {
     padding: 0 0 20px 0;
     text-align: center;
     width: 22%;
-}
+} */
 
-.wins-and-losses {
+/* .wins-and-losses {
     background-color: #3afefd;
-    float: le;
+    float: left;
     margin-top: 20px;
     overflow: auto;
     width: 15%;
-}
+} */
 
-.row {
+/* .row {
     float: left;
     margin: 5px;
     width: 20%;
-}
+} */
 
-img {
+/* img {
     float: left;
     display: block;
     margin: auto;
-}
+} */
 
 /* .row::after {
     content: "";
     clear: both;
     display: table;
 } */
-
+/* 
 .score-heading {
     background-color: #1fa397;
     clear: both;
@@ -80,4 +81,4 @@ img {
     width: 22%;
 
 }
-
+ */
