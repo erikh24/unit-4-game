@@ -23,12 +23,12 @@ $(document).ready(function () {
 
     // Target Score
     var targetScore = randomNumber(19, 120);
-    document.getElementById("target-score").innerHTML = targetScore;
+    $("#target-score").text(targetScore);
 
     // Set Your Score, Wins and Losses to zero at start of the game
-    document.getElementById("your-score").innerHTML = yourScore;
-    document.getElementById("number-losses").innerHTML = numberLosses;
-    document.getElementById("number-wins").innerHTML = numberWins;
+    $("#your-score").text(yourScore);
+    $("#number-losses").text(numberLosses);
+    $("#number-wins").text(numberWins);
 
     // Click events for when clicking on each gem and adding the value to your score
     document.getElementById('blue').onclick = function () {
