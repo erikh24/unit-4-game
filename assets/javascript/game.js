@@ -30,23 +30,34 @@ $(document).ready(function () {
     document.getElementById('blue').onclick = function () {
         yourScore += blueValue;
         document.getElementById("your-score").innerHTML = yourScore;
+        gameResults();
     };
 
     document.getElementById('green').onclick = function () {
         yourScore += greenValue;
         document.getElementById("your-score").innerHTML = yourScore;
+        gameResults();
     };
 
     document.getElementById('red').onclick = function () {
         yourScore += redValue;
         document.getElementById("your-score").innerHTML = yourScore;
+        gameResults();
     };
 
     document.getElementById('yellow').onclick = function () {
         yourScore += yellowValue;
         document.getElementById("your-score").innerHTML = yourScore;
+        gameResults();
     };
 
+    function gameResults() {
+        if (yourScore === targetScore) {
+            alert("You won the game!!");
+        } else if (yourScore > targetScore) {
+            alert("You lost the game.");
+        }
+    }
 });
 
 
