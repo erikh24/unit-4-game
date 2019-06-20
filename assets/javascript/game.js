@@ -53,9 +53,13 @@ $(document).ready(function () {
 
     function gameResults() {
         if (yourScore === targetScore) {
+            setTimeout(function() {
             alert("You won the game!!");
+            },30)
         } else if (yourScore > targetScore) {
+            setTimeout(function() {
             alert("You lost the game.");
+            },30)
         }
     }
 });
