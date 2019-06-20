@@ -32,11 +32,49 @@
             <p>The value of each crystal is hidden from you. Once you click a crystal, you can figure out the value of it by comparing your new score to your old score.</p>
             <p>Each time you start a new game, the values of the crystals will change.</p>
             <p>Good luck!!</p>
+
+            <div class="row">
+                    <div class="col-lg-4"></div>
+                    <div class="col-lg-2">
+                        <!-- First card: Holds the number of wins for the user -->
+                        <div class="card">
+                            <div class="card-body bg-primary text-white">
+                                <h3 class="card-title"><strong>Wins: </strong></h3>
+                            </div>
+                            <div class="card-body text bg-primary">
+                                <!-- This h3 section called number-wins is what we'll be replacing when the user wins the game.
+                                    Pay particular attention to the id called ***number-wins***. We'll be referencing this in the JavaScript. -->
+                                <h3 id="number-wins"></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <!-- First card: Holds the number of losses for the user -->
+                        <div class="card">
+                            <div class="card-body bg-danger text-white">
+                                <!-- This h3 section called number-losses is what we'll be replacing when the user losses the game.
+                                    Pay particular attention to the id called ***number-losses***. We'll be referencing this in the JavaScript. -->
+                                <h3 class="card-title"><strong>Losses: </strong></h3>
+                            </div>
+                            <div class="card-body text bg-danger">
+                                <!-- This h3 section called number-losses is what we'll be replacing when the user losses the game.
+                                    Pay particular attention to the id called ***number-wins***. We'll be referencing this in the JavaScript. -->
+                                <h3 id="number-losses"></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4"></div>
+            
+                </div>
         </div>
+
+        
     </div>
 
     <div class="row">
-        <div class="col-lg-5"></div>
+
+        <div class="col-lg-4"></div>
+        
         <div class="col-lg-2">
             <!-- First card: Holds the random number that the user is trying to get to) -->
             <div class="card">
@@ -50,12 +88,7 @@
                 </div>
             </div>
         </div>
-    </div>
-
-    <br>
-
-    <div class="row">
-        <div class="col-lg-5"></div>
+        <!-- <div class="col-lg-5"></div> -->
         <div class="col-lg-2">
             <!-- Second card: Shows the users current score. -->
             <div class="card">
@@ -69,8 +102,28 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-3"></div>
+        
     </div>
+
+    <br>
+
+    <!-- <div class="row">
+        <div class="col-lg-5"></div>
+        <div class="col-lg-2">
+            Second card: Shows the users current score.
+            <div class="card">
+                <div class="card-body bg-secondary text-white">
+                    <h3 class="card-title"><strong>Your Score</strong></h3>
+                </div>
+                <div class="card-body">
+                    This h3 section called your-score is what we'll be replacing with current score as the user clicks on crystals.
+                        Pay particular attention to the id called ***your-score***. We'll be referencing this in the JavaScript.
+                    <h3 id="your-score"></h3>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3"></div>
+    </div> -->
 
     <div class="container">
         <div class="row">
@@ -93,39 +146,7 @@
         </div>
     </div>
 
-    <div class="row">
-        <div class="col-lg-3"></div>
-        <div class="col-lg-3">
-            <!-- First card: Holds the number of wins for the user -->
-            <div class="card">
-                <div class="card-body bg-secondary text-white">
-                    <h3 class="card-title"><strong>Wins: </strong></h3>
-                </div>
-                <div class="card-body">
-                    <!-- This h3 section called number-wins is what we'll be replacing when the user wins the game.
-                        Pay particular attention to the id called ***number-wins***. We'll be referencing this in the JavaScript. -->
-                    <h3 id="number-wins"></h3>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-3">
-            <!-- First card: Holds the number of losses for the user -->
-            <div class="card">
-                <div class="card-body bg-secondary text-white">
-                    <!-- This h3 section called number-losses is what we'll be replacing when the user losses the game.
-                        Pay particular attention to the id called ***number-losses***. We'll be referencing this in the JavaScript. -->
-                    <h3 class="card-title"><strong>Losses: </strong></h3>
-                </div>
-                <div class="card-body">
-                    <!-- This h3 section called number-losses is what we'll be replacing when the user losses the game.
-                        Pay particular attention to the id called ***number-wins***. We'll be referencing this in the JavaScript. -->
-                    <h3 id="number-losses"></h3>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-3"></div>
-
-    </div>
+   
 
     <footer>
         <br>
