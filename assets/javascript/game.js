@@ -31,29 +31,53 @@ $(document).ready(function () {
     $("#number-wins").text(numberWins);
 
     // Click events for when clicking on each gem and adding the value to your score
-    document.getElementById('blue').onclick = function () {
+    $("#blue").on("click", function () {
         yourScore += blueValue;
-        document.getElementById("your-score").innerHTML = yourScore;
+        $("#your-score").text(yourScore);
         gameResults();
-    };
+    });
 
-    document.getElementById('green').onclick = function () {
+    // document.getElementById('blue').onclick = function () {
+    //     yourScore += blueValue;
+    //     document.getElementById("your-score").innerHTML = yourScore;
+    //     gameResults();
+    // };
+
+    $("#green").on("click", function () {
         yourScore += greenValue;
-        document.getElementById("your-score").innerHTML = yourScore;
+        $("#your-score").text(yourScore);
         gameResults();
-    };
+    });
 
-    document.getElementById('red').onclick = function () {
+    // document.getElementById('green').onclick = function () {
+    //     yourScore += greenValue;
+    //     document.getElementById("your-score").innerHTML = yourScore;
+    //     gameResults();
+    // };
+
+    $("#red").on("click", function () {
         yourScore += redValue;
-        document.getElementById("your-score").innerHTML = yourScore;
+        $("#your-score").text(yourScore);
         gameResults();
-    };
+    });
 
-    document.getElementById('yellow').onclick = function () {
+    // document.getElementById('red').onclick = function () {
+    //     yourScore += redValue;
+    //     document.getElementById("your-score").innerHTML = yourScore;
+    //     gameResults();
+    // };
+
+    $("#yellow").on("click", function () {
         yourScore += yellowValue;
-        document.getElementById("your-score").innerHTML = yourScore;
+        $("#your-score").text(yourScore);
         gameResults();
-    };
+    });
+
+    // document.getElementById('yellow').onclick = function () {
+    //     yourScore += yellowValue;
+    //     document.getElementById("your-score").innerHTML = yourScore;
+    //     gameResults();
+    // };
 
     //Restart game
 
@@ -63,24 +87,24 @@ $(document).ready(function () {
         redValue = randomNumber(1, 12);
         yellowValue = randomNumber(1, 12)
         yourScore = 0;
-        document.getElementById("your-score").innerHTML = yourScore;
+        $("#your-score").text(yourScore);
         targetScore = randomNumber(19, 120);
-        document.getElementById("target-score").innerHTML = targetScore;
+        $("#target-score").text(targetScore);
     }
 
     function gameResults() {
         if (yourScore === targetScore) {
             numberWins++
-            document.getElementById("number-wins").innerHTML = numberWins;
+            $("#number-wins").text(numberWins);
             setTimeout(function () {
                 alert("You won the game!!");
             }, 30);
-            setTimeout(function() {
+            setTimeout(function () {
                 restartGame();
             }, 30);
         } else if (yourScore > targetScore) {
             numberLosses++
-            document.getElementById("number-losses").innerHTML = numberLosses;
+            $("#number-losses").text(numberLosses);
             setTimeout(function () {
                 alert("You lost the game.");
             }, 30);
