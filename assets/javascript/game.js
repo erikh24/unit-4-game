@@ -6,7 +6,7 @@ $(document).ready(function () {
     // Game Counters
     var numberWins = 0;
     var numberLosses = 0;
-
+    
     // Keeps track of your score as you click gems
     var yourScore = 0;
 
@@ -53,10 +53,14 @@ $(document).ready(function () {
 
     function gameResults() {
         if (yourScore === targetScore) {
+            numberWins++
+            document.getElementById("number-wins").innerHTML = numberWins;
             setTimeout(function() {
             alert("You won the game!!");
             },30)
         } else if (yourScore > targetScore) {
+            numberLosses++
+            document.getElementById("number-losses").innerHTML = numberLosses;
             setTimeout(function() {
             alert("You lost the game.");
             },30)
@@ -66,16 +70,6 @@ $(document).ready(function () {
 
 
 
-
-
-
-
-
-// //  MAIN PROCESS (THIS IS THE CODE THAT CONTROLS WHAT IS ACTUALLY RUN)
-// // ==================================================================================================
-
-// // Starts the Game by running the startGame() function
-// startGame();
 
 
 
